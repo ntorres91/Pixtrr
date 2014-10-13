@@ -1,0 +1,7 @@
+<h1> <%= @gallery.name %> Gallery </h1>
+
+<%= link_to "Add Image", new_gallery_image_path(@gallery) %>
+
+<%= button_to "Delete Gallery", @gallery, method: :delete %>
+
+

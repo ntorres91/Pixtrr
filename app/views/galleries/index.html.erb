@@ -1,0 +1,13 @@
+<h1>Junk Food Galleries</h1> 
+
+<ul>
+<div>
+	<% @galleries.each do |gallery| %>
+	
+		<%= link_to gallery.name, "/galleries/#{gallery.id}" %>
+<div>
+
+  <% end %> 
+</ul>
+
+<b><a href = "/galleries/new"> Create Gallery</a></b>
