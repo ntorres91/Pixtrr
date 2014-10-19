@@ -4,4 +4,19 @@
 
 <%= button_to "Delete Gallery", @gallery, method: :delete %>
 
+<% @gallery.images.each do |image| %> 
+  <%= image_tag image.url %> 
 
+
+
+  <% image.comments.each do |comment| %>
+    <%= comment.body %>  
+  <% end %>
+
+  <%= form_for [image, Comment.new] do |f| %>
+    <%= f.text_area :body %>
+    <%= f.submit "Create Comment" %>
+  <% end %> 
+
+
+<% end %>

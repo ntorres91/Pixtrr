@@ -36,3 +36,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'debugger', group: [:development, :test]
 
 gem 'monban', '~> 0.1.0'
+
+gem 'monban-generators'
+
+gem 'acts-as-taggable-on', '~> 3.4'
